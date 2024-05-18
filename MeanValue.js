@@ -1,6 +1,6 @@
 //? Find the Minimum value in the array
 
-//* Write a function findMin that takes an array of numbers as input and returns the minimum value found in array
+//* Write a function findMean that takes an array of numbers as input and returns the minimum value found in array
 
 //* Constraints
 //? The input array may contain both positive and negative integers.
