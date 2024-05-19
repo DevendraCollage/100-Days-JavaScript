@@ -1,0 +1,25 @@
+//* -------------------------------------------
+//* Coding Challenge
+//* -------------------------------------------
+
+//? 25. Write a function to calculate the factorial of a number. (Using Recursion)
+
+//* Recursion:
+//? Recursion is a programming technique where a function calls itself in order to solve a problem. In essence, it's a function that calls itself with smaller or simple input until it reaches a base case.
+
+//* Base Case:
+//? The base case is the condition in a recursive function that stops the recursion. it's the point at which the function stops calling itself and returns a value without further recursion. Without a base case, the recursive function would continue calling itself indefinitely. Leading to what's known as infinite recursion.
+
+//* Recursive Case:
+//? The recursive case is the condition in a recursive function that determine when the function should call itself again. It's typically an expression or condition that evaluate to true for certain inputs, indicating that further recursion is necessary to solve the problem. Each recursive call should move close to the base case, eventually leading to termination of the recursion.
+
+const factorial = (num) => {
+  if (num == 0) {
+    //! This is base-case
+    return 1;
+  }
+  return num * factorial(num - 1); //! This is recursive case
+};
+
+// Example Usage:
+console.log(factorial(5)); // Output: 120
