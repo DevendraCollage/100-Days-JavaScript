@@ -1,0 +1,57 @@
+/* Add the css to the body of the app */
+body {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  background-color: #ecf0f1;
+  height: auto;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+/* Add the css to the navbar of the app */
+.tabs {
+  display: flex;
+  gap: 3.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 3.2rem;
+}
+
+/* Add the css to the images of the gallery of the app */
+.menu_images {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Add the css of the images and set the size of the images */
+img {
+  width: 28rem;
+  height: 100%;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* New CSS for active tab underline */
+.tabs li {
+  padding: 5px 0;
+  position: relative;
+}
+
+.tabs li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  bottom: -5px;
+  left: 0;
+}
